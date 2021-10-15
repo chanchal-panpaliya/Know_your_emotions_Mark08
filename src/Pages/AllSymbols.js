@@ -181,7 +181,7 @@ class AllSymbols extends Component{
     render(){
         return(
             <div>
-                   <table> 
+                   <table style={{paddingLeft:'2%'}}> 
                        <tr>
                          <td>
                         {

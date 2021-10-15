@@ -1,7 +1,7 @@
 import { Component } from "react";
 import '../css/home-emoji.css';
 import ListOfEmojis from '../component/emoji-list.js';
-import Button from '@material-ui/core/Button';
+
 
 class SearchSymbols extends Component{
 
@@ -59,9 +59,9 @@ class SearchSymbols extends Component{
                     {
                         ListOfEmojis.map((item,index)=>{
                            return(
-                              <Button id={item.text} className={item.text} onClick={()=>this.showEmojyName(item.text,item.Symbol)} style={{fontSize:'10px',padding:'none'}}> 
+                              <button id={item.text} className={item.text} onClick={()=>this.showEmojyName(item.text,item.Symbol)} style={{fontSize:'100%',paddingTop:'2%',backgroundColor:'white',color:'white',border:'1px solid #fff'}}> 
                                    {item.Symbol}
-                              </Button> 
+                              </button> 
                            )
                           
                         })
